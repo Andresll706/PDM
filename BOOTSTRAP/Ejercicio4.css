@@ -1,0 +1,58 @@
+.header {
+    background-color: greenyellow;
+    text-align: center;
+}
+
+.uno {
+    text-align: left;
+    background-color: red;
+}
+
+.dos {
+    text-align: center;
+    background-color: blue;
+}
+
+.tres {
+    text-align: right;
+    background-color: red;
+}
+
+@media (min-width: 576px){
+    .header {
+        background-color: blue;
+        text-align: left;
+    }
+    .dos {
+        text-align: right;
+        background-color: red;
+    }
+    
+    .tres {
+        text-align: center;
+        background-color: greenyellow;
+    }
+    
+}
+
+@media (min-width: 768px){
+    .header {
+        background-color: rosybrown;
+        text-align: left;
+    }
+    
+    
+    .uno {
+        text-align: center;
+    }
+
+    .dos {
+        text-align: center;
+    }
+    
+    .tres {
+        text-align: center;
+        background-color: red;
+    }
+    
+}
