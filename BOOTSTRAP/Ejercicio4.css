@@ -18,6 +18,10 @@
     background-color: red;
 }
 
+.f1 , .f2 {
+    text-align:  center;
+} 
+
 @media (min-width: 576px){
     .header {
         background-color: blue;
@@ -55,4 +59,11 @@
         background-color: red;
     }
     
+    .f1{
+        text-align: right;
+    }
+    
+    .f2{
+        text-align: left;
+    }
 }
