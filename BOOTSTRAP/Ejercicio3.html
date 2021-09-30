@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="row ">
+        <div class="row">
             <div class="col-12  bg-success border border-dark text-center">Header</div> 
         </div>
         <div class="row ">
@@ -20,16 +20,20 @@
             <div class="col-6 col-sm-3 bg-danger border border-dark text-center">3</div>
             <div class="col-6 col-sm-3 offset-md-6 bg-danger border border-dark text-center">4</div>
         </div>
+        <div class="row d-none d-sm-block d-md-none">
+            <div class="col-12 bg-success border border-dark">
+                <p class="text-center">Tablet</p>
+            </div>
+        </div>
         <div class="row ">
             <div class="col-6 col-sm-3 order-md-4 bg-danger border border-dark text-center">a</div>
             <div class="col-6 col-sm-3 order-md-3 bg-danger border border-dark text-center">b</div>
             <div class="col-6 col-sm-3 order-md-2 bg-danger border border-dark text-center">c</div>
             <div class="col-6 col-sm-3 order-md-1 bg-danger border border-dark text-center">d</div>
         </div>
-        <div class="row">
+        <div class="row d-sm-none d-md-block">
             <div class="col-12 bg-success border border-dark">
                 <p class="d-sm-none text-center">Mobile</p>
-                <p class="d-none d-sm-block d-md-none text-center">Tablet</p>
                 <p class="d-none d-md-block text-center">Desktop</p>
             </div> 
         </div>
