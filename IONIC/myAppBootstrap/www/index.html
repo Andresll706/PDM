@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <title>COCINA DE ANDRÉS</title>
+    </head>
+    <body>
+        <div class="app">
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a href="#" class=""><img src="./Resources/logotipo.png" alt="logotipo" width="100" height="100"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active"><a class="nav-link active" href="#">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="Ejercicio6-1.html">About Us</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                                    href="#" role="button">Plates</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="Ejercicio6-2.html?BandejaPaisa">Bandeja Paisa</a>
+                                        <a class="dropdown-item" href="Ejercicio6-2.html?Risoto">Risoto</a>
+                                        <a class="dropdown-item" href="Ejercicio6-2.html?Ensalada">Ensalada</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search"
+                                placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success"
+                                type="submit"><i class="bi bi-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="container mt-1">
+                <div class="row ">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <img src="./Resources/plato1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="./Resources/plato2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="./Resources/plato3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card">
+                            <img src="./Resources/plato1.jpg" class="card-img-top" alt="image bootstrap">
+                            <div class="card-body">
+                                <h5 class="card-title">Bandeja Paisa</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quo?</p>
+                                <a href="Ejercicio6-2.html?BandejaPaisa" class="btn btn-primary">Más Información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card">
+                            <img src="./Resources/plato2.jpg" class="card-img-top" alt="image bootstrap">
+                            <div class="card-body">
+                                <h5 class="card-title">Risoto</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quo?</p>
+                                <a href="Ejercicio6-2.html?Risoto" class="btn btn-primary">Más Información</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="card">
+                            <img src="./Resources/plato3.jpg" class="card-img-top" alt="image bootstrap">
+                            <div class="card-body">
+                                <h5 class="card-title">Ensalada</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quo?</p>
+                                <a href="Ejercicio6-2.html?Ensalada" class="btn btn-primary">Más Información</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Comida</th>
+                            <th scope="col">Restaurante</th>
+                            <th scope="col">Lugar</th>
+                            <th scope="col">Hora</th>
+                            <th scope="col">Reserva</th>
+                            <th scope="col">Telefono</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Comida1</td>
+                            <td>Restaurante1</td>
+                            <td>Lugar1</td>
+                            <td>Hora1</td>
+                            <td>Reserva1</td>
+                            <td>Telefono1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Comida2</td>
+                            <td>Restaurante2</td>
+                            <td>Lugar2</td>
+                            <td>Hora2</td>
+                            <td>Reserva2</td>
+                            <td>Telefono2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Comida3</td>
+                            <td>Restaurante3</td>
+                            <td>Lugar3</td>
+                            <td>Hora3</td>
+                            <td>Reserva3</td>
+                            <td>Telefono3</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Comida4</td>
+                            <td>Restaurante4</td>
+                            <td>Lugar4</td>
+                            <td>Hora4</td>
+                            <td>Reserva4</td>
+                            <td>Telefono4</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Comida5</td>
+                            <td>Restaurante5</td>
+                            <td>Lugar5</td>
+                            <td>Hora5</td>
+                            <td>Reserva5</td>
+                            <td>Telefono5</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Comida6</td>
+                            <td>Restaurante6</td>
+                            <td>Lugar6</td>
+                            <td>Hora6</td>
+                            <td>Reserva6</td>
+                            <td>Telefono6</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <footer class="bg-dark">
+                <p>Author: Andrés Rojas<br>
+                <a href="#" class=""><img src="./Resources/logotipo.png" alt="logotipo" width="100" height="100"></a></p>
+            </footer>
+        </div>
+        
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    </body>
+</html>
