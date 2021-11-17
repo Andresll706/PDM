@@ -1,33 +1,58 @@
 import React from 'react';
-import { StyleSheet, View , Button} from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { ListItem, Card } from 'react-native-elements';
 import Content from '../components/content';
 import Back  from '../components/back';
 
 export default function Autor() {
+    const navigation = useNavigation();
     return (
       <View style={styles.container}>
         <Back/>
-        <Content 
-                Title="Información" 
-                Subtitle="" 
-                Text="Aplicación desarollada por Andrés Rojas. A continuación puede consultar
-                más información sobre el autor" 
-                LinkTitle="Consultar información"
-                Link="Curriculum" 
-            />
-          <Button title="Correo:andresll706@gmail.com" onPress={() => console.log("correo!")}/>
-          <Button title="Twitter:@Andresll2" onPress={() => console.log("Twitter!")}/>
-          <Button title="Telefono:619954039" onPress={() => console.log("Telefono!")}/>
+        <Card>
+          <Card.Divider>
+            <Text><b>INFORMACIÓN</b></Text>
+            <Text>
+              Aplicación desarollada por Andrés Rojas. A continuación puede consultar
+              más información sobre el autor
+            </Text> 
+          </Card.Divider>
+          <ListItem bottomDivider onPress={() => {navigation.navigate('Curriculum');}}>
+            <ListItem.Content>
+              <ListItem.Title>Currilum Vitae</ListItem.Title>
+              <ListItem.Chevron />
+            </ListItem.Content>
+          </ListItem>
+          <ListItem bottomDivider>
+            <ListItem.Content>
+              <ListItem.Title>Correo:</ListItem.Title>
+              <ListItem.Subtitle>andresll706@gmail.com</ListItem.Subtitle>
+            </ListItem.Content>
+          </ListItem>
+          <ListItem bottomDivider>
+            <ListItem.Content>
+              <ListItem.Title>Twitter</ListItem.Title>
+              <ListItem.Subtitle>@Andresll2</ListItem.Subtitle>
+            </ListItem.Content>
+          </ListItem>
+          <ListItem bottomDivider>
+            <ListItem.Content>
+              <ListItem.Title>Telefono:</ListItem.Title>
+              <ListItem.Subtitle>619954039</ListItem.Subtitle>
+            </ListItem.Content>
+          </ListItem>
+        </Card>
       </View>
     );
 }
 
+
 const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
+  container: {
+    flex: 1,
+    justifyContent: 'flex',
+    backgroundColor: '#fff',
+    alignItems: 'center',
+  },
 });
-  

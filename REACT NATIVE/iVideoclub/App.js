@@ -1,7 +1,9 @@
 import React from 'react';
+import { StyleSheet, CancelButton} from 'react-native';
 import { NavigationContainer , getFocusedRouteNameFromRoute } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
+import { Icon } from 'react-native-elements';
 
 import Home from './screens/Home';
 import Autor from './screens/Autor';
@@ -35,7 +37,7 @@ function HomeStackNavigator()
       <Stack.Screen
         name="Home"
         component={Home}
-        options={{ title: 'Home' , headerShown: false  }}
+        options={{ title: 'Home' , headerShown: false , }}
       />
       <Stack.Screen
         name="Autor"
@@ -65,11 +67,27 @@ const Drawer = createDrawerNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Drawer.Navigator initialRouteName="Home">
+      <Drawer.Navigator initialRouteName="Home" 
+                        screenOptions={{
+                          drawerStyle: {
+                            backgroundColor: '#0072ce',
+                            width: 240
+                          }
+                        }}>
         <Drawer.Screen name="Home" component={HomeStackNavigator} 
-                       options={({ route }) => ({ headerTitle: getHeaderTitle(route)})}
+                       options={({ navigation, route }) => ({ 
+                        headerTitle: getHeaderTitle(route),
+                        headerStyle:{backgroundColor:'#0072ce'}, 
+                        headerTitleStyle: {color: 'white'} ,
+                       
+                       })}
         />
-        <Drawer.Screen name="About" component={Autor} />
+        <Drawer.Screen name="About" component={Autor}  
+                       options={({ route }) => ({ 
+                        headerStyle:{backgroundColor:'#0072ce'}, 
+                        headerTitleStyle: {color: 'white'} 
+                       })}
+        />
       </Drawer.Navigator>
     </NavigationContainer>
   );

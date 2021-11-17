@@ -1,18 +1,19 @@
 import React from 'react';
-import {Card} from 'react-bootstrap';
+import { Image } from 'react-native'
+import { Card } from 'react-native-elements'
 
 export default function card(props) {
     return (
         <Card>
-            <Card.Img variant="top" src={props.movie.poster} />
-            <Card.Header>
+            <Card.Image source={props.movie.poster}/>
+            <Card.Divider>
                 <Card.Title>{props.movie.title}</Card.Title>
-            </Card.Header>
-            <Card.Body>
+            </Card.Divider>
+            <Card.Divider>
                 <b>Director:</b> {props.movie.director}<br/>
                 <b>Año:</b> {props.movie.year}<br/>
                 <b>Sinopsis:</b> {props.movie.synopsis}
-            </Card.Body>
+            </Card.Divider>
         </Card>
     ); 
 }

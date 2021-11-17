@@ -1,21 +1,21 @@
 import React from 'react';
-import {Card} from 'react-bootstrap';
-import {Button} from 'react-native';
+import {Button, Text} from 'react-native';
+import { Card } from 'react-native-elements'
 import { useNavigation } from '@react-navigation/native';
 
 export default function content(props) {
     const navigation = useNavigation();
     return (
         <Card>
-            <Card.Header>
-                <Card.Subtitle className="mb-2 text-muted">{props.Subtitle}</Card.Subtitle>
+            <Card.Divider>
+                <Card.Title>{props.Subtitle}</Card.Title>
                 <Card.Title>{props.Title}</Card.Title>
-            </Card.Header>
-            <Card.Body>
-                <Card.Text>{props.Text}</Card.Text>
+            </Card.Divider>
+            <Card.Divider>
+                <Text style={{marginBottom: 10}}>{props.Text}</Text>
                 <Button title={props.LinkTitle} onPress={() => 
                         navigation.navigate(`${props.Link}`)}/>
-            </Card.Body>
+            </Card.Divider>
         </Card>
     ); 
 }

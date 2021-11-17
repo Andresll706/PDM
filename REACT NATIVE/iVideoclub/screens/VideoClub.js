@@ -82,9 +82,9 @@ export default class VideoClub extends React.Component {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
+      justifyContent: 'flex',
       backgroundColor: '#fff',
       alignItems: 'center',
-      justifyContent: 'center',
     },
 });
   
