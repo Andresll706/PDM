@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Inicio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Inicio</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Bienvenido a</ion-card-subtitle>
+        <ion-card-title>iVideoClub!</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        iVideoClub es una aplicación desarrollada con Ionic. 
+        Para acceder a la gestión del videoclub pulsa el siguiente boton:
+        <ion-button  [routerLink]="['/videoclub']">
+          <ion-icon name="videocam-outline"></ion-icon>
+          Acceso a iVideoClub
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Información sobre el autor</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Aplicación desarollada por Andrés Rojas 
+        <ion-button [routerLink]="['/autor']">
+          <ion-icon name="person-outline"></ion-icon>
+          Consultar información
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

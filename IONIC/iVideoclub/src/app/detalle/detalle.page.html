@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [routerLink]="['/videoclub']"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{pelicula?.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-img src="{{pelicula?.poster}}"></ion-img>
+      <ion-label class="ion-text-wrap">
+        <b>{{pelicula?.title}}</b><br>
+        <b>Director:</b> {{pelicula?.director}}<br>
+        <b>Año:</b> {{pelicula?.year}}
+        <b>Sinopsis:</b> {{pelicula?.synopsis}}
+      </ion-label>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

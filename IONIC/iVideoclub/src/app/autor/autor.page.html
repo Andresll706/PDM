@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [routerLink]="['/home']"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Autor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Información</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Aplicación desarollada por {{autor.name}}. A continuación puede consultar
+      más información sobre el autor 
+    </ion-card-content>
+
+    <ion-item button [routerLink]="['/curriculum']">
+      <ion-icon slot="start" name="book-outline"></ion-icon>
+      <ion-label class="ion-text-wrap">
+          Curriculum Vítae
+      </ion-label>
+    </ion-item>
+
+    <ion-item button href="mailto:{{autor.email}}">
+      <ion-icon slot="start" name="mail-outline"></ion-icon>
+      <ion-label class="ion-text-wrap">
+          <b>Correo:</b>{{autor.email}}
+      </ion-label>
+    </ion-item>
+
+    <ion-item button href="https://twitter.com/{{autor.twitter}}">
+      <ion-icon slot="start" name="logo-twitter"></ion-icon>
+      <ion-label class="ion-text-wrap">
+          <b>Twitter:</b>@{{autor.twitter}}
+      </ion-label>
+    </ion-item>
+    
+    <ion-item button href="tel:{{autor.phone}}">
+      <ion-icon slot="start" name="call-outline"></ion-icon>
+      <ion-label class="ion-text-wrap">
+          <b>Telefono:</b>{{autor.phone}}
+      </ion-label>
+    </ion-item>
+
+  </ion-card>
+</ion-content>
