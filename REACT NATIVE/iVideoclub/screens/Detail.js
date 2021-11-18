@@ -5,9 +5,8 @@ import { ListItem, Avatar } from 'react-native-elements';
 import Card from '../components/card';
 import Back  from '../components/back';
 
-export default function Detail({route, navigation}) {
-    const movie = route.params.movie; 
-    console.log(movie);
+export default function Detail(props) {
+    let movie = props.route.params.movie; 
     return (
       <View>
         <Back/>

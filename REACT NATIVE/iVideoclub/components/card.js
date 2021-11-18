@@ -4,7 +4,7 @@ import { Card, Text } from 'react-native-elements';
 export default function card(props) {
     return (
         <Card>
-            <Card.Image source={props.movie.poster} 
+            <Card.Image source={{uri:props.movie.poster}} 
                         style={{maxWidth:200, maxHeight:200}}/>
             <Card.Divider>
                 <Card.Title>{props.movie.title}</Card.Title>

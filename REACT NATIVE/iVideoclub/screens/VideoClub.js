@@ -53,20 +53,20 @@ export default class VideoClub extends React.Component {
           <Back/>
           <ScrollView>
             {
-              movies.map((movie) => (
+              movies.map((peli) => (
                 <ListItem
                   bottomDivider
-                  key={movie.id}
+                  key={peli.id}
                   onPress={() => {
                     this.props.navigation.navigate('Detail', {
-                      movie: movies[movie.id-1],
+                      movie: peli,
                     });
                   }}
                 >
-                  <Avatar source={{ uri: movie.poster }} />
+                  <Avatar source={{ uri: peli.poster }} />
                   <ListItem.Content>
-                    <ListItem.Title>{movie.title}</ListItem.Title>
-                    <ListItem.Subtitle>{movie.director}</ListItem.Subtitle>
+                    <ListItem.Title>{peli.title}</ListItem.Title>
+                    <ListItem.Subtitle>{peli.director}</ListItem.Subtitle>
                   </ListItem.Content>
                   <ListItem.Chevron />
                 </ListItem>
