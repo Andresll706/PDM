@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, CancelButton} from 'react-native';
+import { StyleSheet, CancelButton, AppRegistry } from 'react-native';
 import { NavigationContainer , getFocusedRouteNameFromRoute } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
@@ -11,6 +11,7 @@ import Curriculum from './screens/Curriculum';
 import VideoClub from './screens/VideoClub';
 import Detail from './screens/Detail';
 
+AppRegistry.registerComponent('main',() => App);
 
 function getHeaderTitle(route) {
   const routeName = getFocusedRouteNameFromRoute(route) ?? 'Home';

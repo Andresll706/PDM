@@ -49,7 +49,7 @@ export default class VideoClub extends React.Component {
           );
       }
       return (
-        <View style={styles.container}>
+        <View>
           <Back/>
           <ScrollView>
             {
@@ -82,7 +82,7 @@ export default class VideoClub extends React.Component {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      justifyContent: 'flex',
+      justifyContent: 'flex-start',
       backgroundColor: '#fff',
       alignItems: 'center',
     },

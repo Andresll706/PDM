@@ -8,12 +8,12 @@ import Back  from '../components/back';
 export default function Autor() {
     const navigation = useNavigation();
     return (
-      <View style={styles.container}>
+      <View>
         <Back/>
         <Card>
           <Card.Divider>
-            <Text><b>INFORMACIÓN</b></Text>
-            <Text>
+            <Text style={{textAlign:'center'}}>INFORMACIÓN</Text>
+            <Text style={{marginBottom: 50, textAlign:'center'}}>
               Aplicación desarollada por Andrés Rojas. A continuación puede consultar
               más información sobre el autor
             </Text> 
@@ -51,7 +51,7 @@ export default function Autor() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'flex',
+    justifyContent: 'flex-start',
     backgroundColor: '#fff',
     alignItems: 'center',
   },

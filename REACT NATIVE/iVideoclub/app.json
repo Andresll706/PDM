@@ -18,10 +18,10 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.iVideoClubAndres"
+      "bundleIdentifier": "com.AndresRojas.iVideoClub"
     },
     "android": {
-      "package": "com.iVideoClubAndres",
+      "package": "com.AndresRojas.iVideoClub",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"

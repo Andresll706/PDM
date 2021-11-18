@@ -4,7 +4,7 @@ import Content from '../components/content';
 
 export default function Home(){   
     return (
-        <View style={styles.container}>
+        <View>
             <Content 
                     Title="Bienvenido a" 
                     Subtitle="iVideoClub" 
@@ -28,7 +28,7 @@ export default function Home(){
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      justifyContent: 'flex',
+      justifyContent: 'flex-start',
       backgroundColor: '#fff',
       alignItems: 'center',
     },
