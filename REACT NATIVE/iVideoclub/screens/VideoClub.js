@@ -72,6 +72,7 @@ export default class VideoClub extends React.Component {
                 </ListItem>
               ))
             }
+            <Text style={{marginBottom:100}}></Text>
           </ScrollView>
         </View> 
       );

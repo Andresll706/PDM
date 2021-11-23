@@ -71,7 +71,7 @@ export default function App() {
       <Drawer.Navigator initialRouteName="Home" 
                         screenOptions={{
                           drawerStyle: {
-                            backgroundColor: '#0072ce',
+                            backgroundColor: '#fcfcfc',
                             width: 240
                           }
                         }}>
